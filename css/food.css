@@ -1,0 +1,108 @@
+/* styles.css */
+@keyframes zoom-fade {
+  0%{opacity: 0.1;}
+  20%{opacity: 0.2;}
+  40%{opacity: 0.4;}
+  50%{transform: scale(1.2);}
+  60%{opacity: 0.6;}
+  80%{opacity: 0.8;}
+  100%{opacity: 1;}
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f1e3;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffc2d1;
+  padding: 2%;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  color: #ff3366;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1%;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+nav ul li a:visited {
+  color: #ff3366;
+  text-decoration: none;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+main {
+  padding: 2%;
+}
+.food-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+.col1, .col2{
+  display: flex;
+  flex-direction: column;
+}
+.box{
+  display: flex;
+  margin: 2%;
+  border: solid 3px #c2d7f3;
+  font-size: small;
+  width: 400px;
+  height: 150px;
+  padding: 1%;
+  gap: 5%;
+}
+.product-title{
+  display: flex;
+  gap: 10%;
+}
+.col1 img{
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.col1 a, .col2 a{
+  color: #8a8785;
+  font-weight: 400;
+  text-decoration: none;
+}
+/* .col1 div:hover, .col2 div:hover{
+  animation: zoom-fade;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+} */
+
+footer {
+  background-color: #ffc2d1;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+}
